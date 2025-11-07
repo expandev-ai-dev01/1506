@@ -1,0 +1,8 @@
+import type { Product } from '../../types';
+
+export interface ProductGridProps {
+  products: Product[];
+  isLoading?: boolean;
+  onAddToCart?: (productId: string) => void;
+  onViewDetails?: (productId: string) => void;
+}
